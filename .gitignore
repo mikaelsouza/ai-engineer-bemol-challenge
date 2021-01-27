@@ -2,3 +2,5 @@
 *.Identifier
 .env
 .ipynb_checkpoints
+__pycache__
+.vscode
