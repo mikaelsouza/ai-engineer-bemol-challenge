@@ -7,7 +7,7 @@ Script para remover informações da base de dados utilizada para simular
 dados confidenciais.
 '''
 
-dir_path = Path('../../data/')
+dir_path = Path('data/')
 path_to_data = join(dir_path, 'processed/labeled_rfm.csv')
 path_to_save = join(dir_path, 'processed/confidential_rfm.csv')
 
