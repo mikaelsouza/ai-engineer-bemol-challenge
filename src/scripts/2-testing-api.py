@@ -2,8 +2,9 @@ import requests
 import json
 from os.path import join
 
-# Modificar caso esteja usando outra porta ou acessando o serviço em núvem
-url = 'http://127.0.0.1:5000/'
+# Modificar esteja testando localmente ou na núvem
+#url = 'http://127.0.0.1:5000/'
+url = 'http://70.37.71.116:5000/'
 
 # Endpoints que não requerem IDs
 countries_ep = 'countries'
