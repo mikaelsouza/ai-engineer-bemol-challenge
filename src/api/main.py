@@ -1,5 +1,5 @@
 import client
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -30,26 +30,31 @@ def hello():
 @app.route('/country/<id>')
 def get_clients_by_country(id):
     id = sane_input(id)
-    return client_informer.get_clients_by_country(id)
+    result = jsonify(client_informer.get_clients_by_country(id))
+    return result
 
 
 @app.route('/countries/')
 def get_countries():
-    return client_informer.get_countries()
+    result = jsonify(client_informer.get_countries())
+    return result
 
 
 @app.route('/client/<id>')
 def get_client_by_id(id):
     id = sane_input(id)
-    return client_informer.get_client_by_id(id)
+    result = jsonify(client_informer.get_client_by_id(id))
+    return result
 
 
 @app.route('/tiers/')
 def get_tiers():
-    return client_informer.get_tiers()
+    result = jsonify(client_informer.get_tiers())
+    return result
 
 
 @app.route('/tier/<id>')
 def get_client_by_tier(id):
     id = sane_input(id)
-    return client_informer.get_client_by_tier(id)
+    result = jsonify(client_informer.get_client_by_tier(id))
+    return result
