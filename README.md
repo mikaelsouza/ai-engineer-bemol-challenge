@@ -42,7 +42,7 @@ O projeto consiste em 2 núcleos distintos, os notebooks onde são apresentadas 
 
 Primeiramente, os comandos abaixo foram testados apenas em uma máquina com Ubuntu 20.04 e outra máquina com macOS 10.11, portanto, se algo descrito abaixo não funcionar corretamente, me contate para que eu possa adicionar os passos corretos aqui. Para a execução do servidor da API, devem ser executados os seguintes passos:
 
-1. Definir uma variável de ambiente chamada `FLASK_APP` com a localização do arquivo `src/api.main.py`. Caso a tentativa de execução seja feita a partir da raiz do projeto, digitar o comando `export FLASK_APP=src/api.main.py` no terminal (Ubuntu ou macOS) deverá ser suficiente.
+1. Definir uma variável de ambiente chamada `FLASK_APP` com a localização do arquivo `src/api.main.py`. Caso a tentativa de execução seja feita a partir da raiz do projeto, digitar o comando `export FLASK_APP=src/api/main.py` no terminal (Ubuntu ou macOS) deverá ser suficiente.
 
 2. Executar comando `flask run` via terminal. Isso fará com que o flask (instalado anteriormente com pip) busque o arquivo definido na variável de ambiente e inicie o servidor da API. Após essa execução, a API está preparada para receber requisições. O servidor da API será executado em `localhost:5000`.
 
